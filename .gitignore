@@ -1,0 +1,15 @@
+# Python
+puzzlebackend/venv/
+__pycache__/
+*.pyc
+
+# Node
+puzzlefrontend/node_modules/
+puzzlefrontend/.env
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+

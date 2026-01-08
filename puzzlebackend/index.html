@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>1. Upload Full Puzzle</h2>
+    <input type="file" id="puzzleInput">
+    <button onclick="uploadPuzzle()">Upload Puzzle</button>
+    <p>Session ID: <span id="sessionId">None</span></p>
+
+    <hr>
+
+    <h2>2. Upload Piece</h2>
+    <input type="file" id="pieceInput">
+    <button onclick="uploadPiece()">Find Piece</button>
+    
+    <br><br>
+    <img id="resultImage" style="max-width: 800px;">
+
+    <script>
+        let currentSessionId = '';
+
+        async function uploadPuzzle() {
+            const file = document.getElementById('puzzleInput').files[0];
+            const formData = new FormData();
+            formData.append('puzzle', file);
+
+            const response = await fetch('http://127.0.0.1:5000/upload-puzzle', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+            currentSessionId = data.session_id;
+            document.getElementById('sessionId').innerText = currentSessionId;
+        }
+
+        async function uploadPiece() {
+            const file = document.getElementById('pieceInput').files[0];
+            const formData = new FormData();
+            formData.append('piece', file);
+            formData.append('session_id', currentSessionId);
+
+            const response = await fetch('http://127.0.0.1:5000/upload-piece', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+            if(data.puzzle_image) {
+                document.getElementById('resultImage').src = 'data:image/png;base64,' + data.puzzle_image;
+            } else {
+                alert(data.error);
+            }
+        }
+    </script>
+</body>
+</html>
