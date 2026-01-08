@@ -2,7 +2,7 @@
 
 This repository contains the frontend and backend for the Puzzle Pal project.
 
-PuzzlePal is a web application that helps users complete their jigsaw puzzles. Snap or upload an image of your puzzle. Then as you build your puzzle, if you're not sure where a piece goes, snap a picture of the puzzle piece to PuzzlePal and it'll tell you where in the puzzle the piece belongs!
+PuzzlePal is a web application that helps users complete their jigsaw puzzles. Snap or upload an image of your puzzle. As you build your puzzle, if you're not sure where a piece fits, snap a picture of the puzzle piece with PuzzlePal, and it'll show you exactly where the piece belongs!
 
 Features:
 - Upload puzzle images
