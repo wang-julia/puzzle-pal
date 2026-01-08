@@ -26,6 +26,7 @@ Features:
 
 ## In Progress
 - Handle rotated pieces
+- Handle solid color spaces
 - Improve UI
 - Implement Deep Learning to improve accuracy
 - Hint System rather than complete answer
