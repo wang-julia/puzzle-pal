@@ -14,6 +14,7 @@ Features:
 ## Frontend
 - Built with React
 - Handles uploading puzzle and pieces, showing the puzzle with detected piece locations
+- Deployed using Vercel
 
 ## Backend
 - Built with Flask
@@ -22,6 +23,7 @@ Features:
 - Uses numPy for numerical operations
 - Uses uuid for generating unique session IDs for each puzzle upload
 - Uses base64 for image encoding
+- Deployed using Render
 
 
 ## In Progress
