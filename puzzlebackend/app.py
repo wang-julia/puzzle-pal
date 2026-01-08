@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, jsonify # For building the web server
 import cv2 # OpenCV for image processing
 import numpy as np # NumPy for numerical operations
