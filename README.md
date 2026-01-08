@@ -27,5 +27,5 @@ Features:
 ## In Progress
 - Handle rotated pieces
 - Improve UI
-- Implement ML and Deep Learning to improve accuracy
+- Implement Deep Learning to improve accuracy
 - Hint System rather than complete answer
