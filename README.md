@@ -24,7 +24,7 @@ Features:
 - Uses base64 for image encoding
 
 
-##In Progress
+## In Progress
 - Handle rotated pieces
 - Improve UI
 - Implement ML and Deep Learning to improve accuracy
