@@ -22,3 +22,10 @@ Features:
 - Uses numPy for numerical operations
 - Uses uuid for generating unique session IDs for each puzzle upload
 - Uses base64 for image encoding
+
+
+##In Progress
+- Handle rotated pieces
+- Improve UI
+- Implement ML and Deep Learning to improve accuracy
+- Hint System rather than complete answer
